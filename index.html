@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Parking Lot</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-1">
+        <div>
+          <h4>User</h4>
+          <div class="find-slot">
+            <div class="text">Find your slot</div>
+            <input
+              id="user-registration"
+              class="for-placeholder"
+              type="text"
+              placeholder="Enter Registration number"
+            />
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                height: 1.5rem;
+                margin-top: 0.5rem;
+              "
+              id="show-user-slot"
+            ></div>
+          </div>
+
+          <div>
+            <div class="text">Find slot details</div>
+            <input
+              min="1"
+              max="5"
+              id="user-slot"
+              class="for-placeholder"
+              type="number"
+              placeholder="Enter Slot Number"
+            />
+          </div>
+          <div class="show-table">
+            <div id="listText"></div>
+            <div id="show-user-registration"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-2">
+        <div>
+          <h4>Admin</h4>
+          <div class="find-slot">
+            <div class="text">Assign Slot</div>
+            <input
+              id="admin-assign-slot"
+              class="for-placeholder"
+              type="text"
+              placeholder="Add Registration Number"
+            />
+            <button id="add">Add</button>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                height: 1.5rem;
+                margin-top: 0.5rem;
+              "
+              id="show-admin-slot"
+            ></div>
+          </div>
+
+          <div class="">
+            <div class="text">Find Details</div>
+            <input
+              min="1"
+              max="5"
+              id="admin-registration"
+              class="for-placeholder"
+              type="text"
+              placeholder="Enter Slot/Registration Number"
+            />
+          </div>
+          <div class="show-table">
+            <div id="listText2"></div>
+
+            <div id="admin-show-user-registration"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
